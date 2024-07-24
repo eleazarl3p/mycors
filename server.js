@@ -1,7 +1,7 @@
 const cors_proxy = require("cors-anywhere");
 
-const host = "mycors-d9no.onrender.com";
-const port = 10000;
+const host = "localhost";
+const port = process.env.PORT || 10000;
 
 cors_proxy
   .createServer({
